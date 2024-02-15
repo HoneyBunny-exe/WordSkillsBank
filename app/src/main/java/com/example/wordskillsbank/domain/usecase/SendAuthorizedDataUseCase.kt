@@ -1,7 +1,9 @@
 package com.example.wordskillsbank.domain.usecase
 
-class SendAuthorizedDataUseCase {
-    fun execute(){
+import com.example.wordskillsbank.domain.model.LoginPasswordModel
 
+class SendAuthorizedDataUseCase {
+    fun execute(loginPassword: LoginPasswordModel){
+        // TODO: Написать реализацию
     }
 }
