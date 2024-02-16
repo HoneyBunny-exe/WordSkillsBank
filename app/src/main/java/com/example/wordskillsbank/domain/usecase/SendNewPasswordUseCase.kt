@@ -1,7 +1,11 @@
 package com.example.wordskillsbank.domain.usecase
 
-class SendNewPasswordUseCase {
-    fun execute(password:String) {
-        // TODO: Написать реализацию
+import com.example.wordskillsbank.domain.model.ConfirmPasswordModel
+import com.example.wordskillsbank.domain.model.TFATokenModel
+import com.example.wordskillsbank.domain.repository.LoginPasswordRepository
+
+class SendNewPasswordUseCase(private val loginPasswordRepository: LoginPasswordRepository) {
+    fun execute(confirmPasswordModel: ConfirmPasswordModel):TFATokenModel {
+        return loginPasswordRepository.sendNewPassword(confirmPasswordModel)
     }
 }
