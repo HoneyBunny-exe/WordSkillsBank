@@ -4,5 +4,5 @@ import com.example.wordskillsbank.domain.model.ValuteModel
 
 interface ValuteModelRepository {
     fun getAllValute():List<ValuteModel>
-    //fun getValute(charCode:String):ValuteModel
+    fun getValute(charCode:String):ValuteModel
 }
