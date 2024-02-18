@@ -8,4 +8,5 @@ class CardModel(
     val card_name: String,
     val balance: Double,
     val currency: String,
+    val token_card: String,
 )
