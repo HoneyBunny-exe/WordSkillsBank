@@ -7,6 +7,6 @@ import com.example.wordskillsbank.domain.repository.AccountModelRepository
 class GetAllAccountOperationUseCase(private val accountModelRepository: AccountModelRepository) {
     fun execute(accountModel: AccountModel):List<OperationModel>{
         // TODO: Логика обработки полученной информации
-        return accountModelRepository.getOpeartions(accountModel)
+        return accountModelRepository.getOperations(accountModel)
     }
 }

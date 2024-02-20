@@ -5,5 +5,5 @@ import com.example.wordskillsbank.domain.model.OperationModel
 
 interface AccountModelRepository {
     fun createAccount(accountModel:AccountModel):AccountModel
-    fun getOpeartions(accountModel: AccountModel):List<OperationModel>
+    fun getOperations(accountModel: AccountModel):List<OperationModel>
 }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments_main_activity.TransactionsYouselfFragment">
+
+
+    <TextView
+        android:id="@+id/to_youself_transaction_label"
+        android:layout_width="166dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="156dp"
+        android:text="Между своими счетами"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/to_youself_transaction_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Откуда"
+        app:layout_constraintStart_toStartOf="@+id/to_youself_transaction_label"
+        app:layout_constraintTop_toBottomOf="@+id/to_youself_transaction_label" />
+
+    <Spinner
+        android:id="@+id/to_youself_transaction_spinner_from"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_youself_transaction_from" />
+
+    <TextView
+        android:id="@+id/to_youself_transaction_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Куда"
+        app:layout_constraintStart_toStartOf="@+id/to_youself_transaction_from"
+        app:layout_constraintTop_toBottomOf="@+id/to_youself_transaction_spinner_from" />
+
+    <Spinner
+        android:id="@+id/to_youself_transaction_spinner_to"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_youself_transaction_to" />
+
+    <TextView
+        android:id="@+id/to_youself_transaction_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сколько"
+        app:layout_constraintStart_toStartOf="@+id/to_youself_transaction_to"
+        app:layout_constraintTop_toBottomOf="@+id/to_youself_transaction_spinner_to" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_youself_transaction_money" />
+
+    <Button
+        android:id="@+id/to_youself_transaction_button"
+        android:layout_width="207dp"
+        android:layout_height="51dp"
+        android:text="Продолжить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+</androidx.constraintlayout.widget.ConstraintLayout>

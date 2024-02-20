@@ -5,6 +5,7 @@ import com.example.wordskillsbank.domain.model.AccountModel
 
 class GetAccountToAccount {
     fun map(getAccountModel: GetAccountModel):AccountModel{
-        // TODO: Написать реализацию 
+        // TODO: Написать реализацию
+        return null as AccountModel
     }
 }

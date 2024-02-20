@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments_main_activity.PaymentsFragment">
+
+
+    <TextView
+        android:id="@+id/payments_label"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="124dp"
+        android:text="Оплатить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chose_account"
+        android:layout_width="114dp"
+        android:layout_height="19dp"
+        android:text="Выберите счет"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payments_label" />
+
+    <Spinner
+        android:id="@+id/spinner_my_accounts"
+        android:layout_width="332dp"
+        android:layout_height="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chose_account" />
+
+    <TextView
+        android:id="@+id/payment_about"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Назначение платежа"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_my_accounts" />
+
+    <EditText
+        android:id="@+id/edit_about_payment"
+        android:layout_width="211dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_about" />
+
+    <TextView
+        android:id="@+id/payment_account"
+        android:layout_width="178dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="20dp"
+        android:text="Номер счета для оплаты"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_about_payment" />
+
+    <EditText
+        android:id="@+id/edit_acount"
+        android:layout_width="211dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_account" />
+
+    <TextView
+        android:id="@+id/amount_money_payment"
+        android:layout_width="163dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:text="Сумма перевода"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_acount" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_money_payment" />
+
+    <Button
+        android:id="@+id/continue_payment"
+        android:layout_width="142dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Продолжить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

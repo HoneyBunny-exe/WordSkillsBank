@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/ic_main_icon"
+        android:title="Домой"/>
+    <item
+        android:id="@+id/bottom_payment"
+        android:icon="@drawable/ic_transaction"
+        android:title="Платежи"/>
+    <item
+        android:id="@+id/bottom_valute"
+        android:icon="@drawable/ic_coins"
+        android:title="Валюта"/>
+    <item
+        android:id="@+id/bottom_transaction"
+        android:icon="@drawable/ic_transaction_arrows"
+        android:title="Переводы"/>
+    <item
+        android:id="@+id/bottom_add"
+        android:icon="@drawable/ic_plus"
+        android:title="Оформить"/>
+</menu>

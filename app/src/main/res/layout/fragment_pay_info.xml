@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments_main_activity.PayInfoFragment">
+
+
+    <TextView
+        android:id="@+id/pay_info_label"
+        android:layout_width="192dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="216dp"
+        android:text="Перевод выполнен"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pay_info_transaction_type"
+        android:layout_width="129dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/pay_info_label"
+        app:layout_constraintTop_toBottomOf="@+id/pay_info_label" />
+
+    <TextView
+        android:id="@+id/pay_info_about"
+        android:layout_width="211dp"
+        android:layout_height="23dp"
+        android:text="Подробности операции:"
+        app:layout_constraintStart_toStartOf="@+id/pay_info_transaction_type"
+        app:layout_constraintTop_toBottomOf="@+id/pay_info_transaction_type" />
+
+    <TextView
+        android:id="@+id/pay_info_from_label"
+        android:layout_width="136dp"
+        android:layout_height="34dp"
+        android:text="Откуда:"
+        app:layout_constraintStart_toStartOf="@+id/pay_info_about"
+        app:layout_constraintTop_toBottomOf="@+id/pay_info_about" />
+
+    <TextView
+        android:id="@+id/pay_info_to_label"
+        android:layout_width="136dp"
+        android:layout_height="33dp"
+        android:text="Куда:"
+        app:layout_constraintStart_toStartOf="@+id/pay_info_from_label"
+        app:layout_constraintTop_toBottomOf="@+id/pay_info_from_label" />
+
+    <TextView
+        android:id="@+id/pay_info_money_label"
+        android:layout_width="135dp"
+        android:layout_height="33dp"
+        android:text="Сумма перевода:"
+        app:layout_constraintStart_toStartOf="@+id/pay_info_to_label"
+        app:layout_constraintTop_toBottomOf="@+id/pay_info_to_label" />
+
+    <TextView
+        android:id="@+id/pay_info_from"
+        android:layout_width="189dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/pay_info_from_label"
+        app:layout_constraintTop_toTopOf="@+id/pay_info_from_label" />
+
+    <TextView
+        android:id="@+id/pay_info_to"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/pay_info_to_label"
+        app:layout_constraintTop_toTopOf="@+id/pay_info_to_label" />
+
+    <TextView
+        android:id="@+id/pay_info_money"
+        android:layout_width="180dp"
+        android:layout_height="33dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/pay_info_money_label"
+        app:layout_constraintTop_toTopOf="@+id/pay_info_money_label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,14 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WordSkillsBank"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.worldskillsbank.presentation.activities.AuthorizationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.worldskillsbank.presentation.activities.MainAppActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name="com.example.worldskillsbank.presentation.activities.MapActivity"
+            android:exported="true">
         </activity>
     </application>
 
